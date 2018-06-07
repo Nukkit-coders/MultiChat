@@ -20,7 +20,7 @@ name-tag:
 display-name:
 # Enable display name (shown by TAB-key)
   enable: true
-  format: '&2%prefix%a2%player%&e: %message%'
+  format: '&2%prefix%&a%player%&e: %message%'
 # Remove color codes from display name
   strip-colors: false
 
@@ -31,7 +31,7 @@ group:
 # Chat format 
   format:
     default: # Group name
-      chat: '&5[GUEST]&3%player%&a: 6%message%' # Chat format
+      chat: '&5[GUEST]&3%player%&a: %message%' # Chat format
     vip: # Group name
       chat: '&6[VIP]&4%player%&a: %message%' # Chat format
       name-tag: '&6[VIP] &4%player%' # Name tag format
