@@ -7,6 +7,32 @@
     <groupId>ru.nukkit.multichat</groupId>
     <artifactId>MultiChat</artifactId>
     <version>1.0-SNAPSHOT</version>
+    
+    <repositories>
+        <repository>
+            <id>potestas-repo</id>
+            <url>https://repo.potestas.xyz/main/</url>
+        </repository>
+        <repository>
+            <id>nukkit-ru</id>
+            <url>http://repo.nukkit.ru</url>
+        </repository>
+    </repositories>
+    
+    <dependencies>
+        <dependency>
+            <!-- Nukkit is last, so that Guava can overwrite the ancient Google Collections -->
+            <groupId>cn.nukkit</groupId>
+            <artifactId>nukkit</artifactId>
+            <version>1.0-SNAPSHOT</version>
+            <scope>provided</scope>
+        </dependency>      
+        <dependency>
+            <groupId>ru.nukkit.multipass</groupId>
+            <artifactId>Multipass</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>    
+    </dependencies>
 
     <build>
         <plugins>
